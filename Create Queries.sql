@@ -15,6 +15,7 @@ CREATE TABLE DepositoryStock (
     Stock_Name VARCHAR(100),
     Stock_Count INT
 );
+select * from DepositoryStock;
 
 -- Table to log the comparison results
 CREATE TABLE StockComparisonLog (
@@ -27,6 +28,8 @@ CREATE TABLE StockComparisonLog (
     Comparison_Result VARCHAR(50),
     Comparison_Date DATETIME DEFAULT GETDATE()
 );
+
+select * from StockComparisonLog;
 
 CREATE TABLE error_log (
     error_message VARCHAR(4000),              -- Error message text
